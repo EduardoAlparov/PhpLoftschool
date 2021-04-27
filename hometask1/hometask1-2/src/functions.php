@@ -12,7 +12,7 @@ function task1($array = [], bool $return = false)
             return "<p>$str</p>";
         }, $array));
         echo $result;
-    } elseif($return === true) {
+    } else {
         return implode(' ', $array);
     }
 
@@ -49,7 +49,7 @@ function task2($str = '', ...$args)
             $sum_last_args = 0;
             for($i=1; $i < count($args); $i++) {
                 $sum_last_args -= $args[$i];
-            };
+            }
             $diff = reset($args) + $sum_last_args;
             echo 'Разность равна ' . $diff;
             break;
@@ -69,6 +69,9 @@ function task2($str = '', ...$args)
                 $res *= $args[$a];
             }
             echo $res;
+        default:
+            echo '!!!!!';
+            echo '<br>';
 
     }
 }
@@ -87,23 +90,21 @@ function task3($a, $b)
 {
     if(!is_int($a) || !is_int($b) ) {
         trigger_error('Переменная должна быть целым числом');
-    }
-
-    if($a <= 0 || $b <= 0 ) {
+    } elseif($a <= 0 || $b <= 0 ) {
         trigger_error('Переменная должна быть больше либо равна единице');
-    }
-
-    echo '<table>';
-    for ($i = 1; $i <= $a; $i++) {
-        echo '<tr>';
-        for ($j = 1; $j <= $b; $j++) {
-            echo '<td>';
-            echo $result = $i * $j;
-            echo '</td>';
+    } else {
+        echo '<table>';
+        for ($i = 1; $i <= $a; $i++) {
+            echo '<tr>';
+            for ($j = 1; $j <= $b; $j++) {
+                echo '<td>';
+                echo $result = $i * $j;
+                echo '</td>';
+            }
+            echo '</tr>';
         }
-        echo '</tr>';
+        echo '</table>';
     }
-    echo '</table>';
 }
 
 

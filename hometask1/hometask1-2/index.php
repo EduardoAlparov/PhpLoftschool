@@ -6,7 +6,7 @@ require "src/functions.php";
 //echo "<br>";
 
 //task2
-//echo task2('*', 10, 2, 7 );
+//echo task2('-', 10, 2, 7 );
 //echo "<br>";
 
 //task3
@@ -22,13 +22,13 @@ require "src/functions.php";
 Выведите unixtime время соответствующее 24.02.2016 00:00:00.
  **/
 
-date_default_timezone_set('Europe/Moscow');
-echo date('d.m.Y H:i');
-echo '<br>';
-
-$time = strtotime('24.02.2016 00:00:00');
-echo $time;
-echo '<br>';
+//date_default_timezone_set('Europe/Moscow');
+//echo date('d.m.Y H:i');
+//echo '<br>';
+//
+//$time = strtotime('24.02.2016 00:00:00');
+//echo $time;
+//echo '<br>';
 
 //task5
 
@@ -39,13 +39,13 @@ echo '<br>';
 Дана строка: “Две бутылки лимонада”. Заменить “Две”, на “Три”.
  **/
 
-$string = 'Карл у Клары украл Кораллы';
-var_dump(str_replace('К', '', $string));
-echo "<br>";
-
-$str = 'Две бутылки лимонада';
-var_dump(str_replace('Две', 'Три', $str));
-echo "<br>";
+//$string = 'Карл у Клары украл Кораллы';
+//var_dump(str_replace('К', '', $string));
+//echo "<br>";
+//
+//$str = 'Две бутылки лимонада';
+//var_dump(str_replace('Две', 'Три', $str));
+//echo "<br>";
 
 //task6
 
@@ -61,4 +61,4 @@ echo "<br>";
 //$data = file_get_contents('test.txt');
 //echo $data;
 
-task6('test.txt');
+//task6('test.txt');

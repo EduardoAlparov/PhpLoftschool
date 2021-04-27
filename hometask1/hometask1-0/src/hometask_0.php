@@ -2,7 +2,7 @@
 include '../const.php';
 include '../function.php';
 
-$user_name = "Igor";
+$userName = "Igor";
 
 if (1) {
     echo 'hi';

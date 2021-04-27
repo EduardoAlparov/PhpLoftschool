@@ -11,4 +11,4 @@ define('TOTAL_PIC', (int)80);  //всего рисунков
 define('BY_FELTPEN', (int)23); // рисунков, выполненных фломастером
 define('BY_PENCIL', (int)40); // рисунков, выполненных карандашом
 
-echo 'Красками выполнено  ' . (TOTAL_PIC - BY_FELTPEN - BY_PENCIL) . ' ' . 'рисунков.';
+echo 'Красками выполнено  ' . (TOTAL_PIC - BY_FELTPEN - BY_PENCIL) . ' рисунков.';
