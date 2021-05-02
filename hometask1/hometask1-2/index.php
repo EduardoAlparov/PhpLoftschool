@@ -6,8 +6,8 @@ require "src/functions.php";
 //echo "<br>";
 
 //task2
-//echo task2('-', 10, 2, 7 );
-//echo "<br>";
+echo task2('-', 10, 2, 7 );
+echo "<br>";
 
 //task3
 
