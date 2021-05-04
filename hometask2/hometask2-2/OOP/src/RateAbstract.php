@@ -27,7 +27,7 @@ class RateAbstract implements RateInterface
     {
         $this->getPrice();
 
-        array_push($this->services, $service);
+        $this->services[] = $service;
 
         if ($this->services) {
             foreach ($this->services as $value) {

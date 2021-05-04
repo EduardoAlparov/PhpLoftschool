@@ -13,12 +13,12 @@ $rate = new \App\RateBasic(5, 60);
 echo $rate->getPrice() . ' руб';
 
 ///** =245 **/
-//$rate = new \App\RateBasic(5, 60);
-//echo $rate->addServices(new \App\GPSService()) . ' руб';
+$rate = new \App\RateBasic(5, 60);
+echo $rate->addServices(new \App\GPSService()) . ' руб';
 //
 ///** =330 **/
-//$rate = new \App\RateBasic(5, 60);
-//echo $rate->addServices(new \App\DriverService()) . ' руб';
+$rate = new \App\RateBasic(5, 60);
+echo $rate->addServices(new \App\DriverService()) . ' руб';
 //
 ///** =200 **/
 //$rate = new \App\RateByHour( 60);
